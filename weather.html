@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Weather Update</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearch.min.js"></script>
+    <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
+
+    <!-- <form class="frm weather">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" />
+        <button type="submit">Get Weather</button>
+    </form> -->
+
+    <section class="weather-container">
+        <div class="weather-form">
+            <nav>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons">arrow_back</i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="weather-title">
+                <h1>WEATHER</h1>
+                <form class="frm weather">
+                    <input type="text" id="location" name="location" placeholder="Enter City" />
+                    <button type="submit"><i class="material-icons">
+                        gps_fixed
+                        </i></button>
+                </form>
+            </section>
+            <section class="weather-display">
+                <div class="details special-temp"><span class="temp value"></span></div>
+                <div class="details pl-6">Location: <span class="location value"></span></div>
+                <div class="details pl-6">Date: <span class="date value"></span></div>
+                <div class="details pl-6">Conditions: <span class="conditions value"></span></div>
+                <div class="details pl-6">Sunrise: <span class="sunrise value"></span></div>
+                <div class="details pl-6">Sunset: <span class="sunset value"></span></div>
+                <div class="details"><span class="special-icon"></span></div>
+            </section>
+            <div class="forecast"></div>
+        </div>
+        <div class="weather-map" id="map">
+        </div>
+    </section>
+    <script src="js/config.js"></script>
+    <script src="js/main.es6.js"></script>
+    <!-- Replace the value of the key parameter with your own API key. -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9JpAgZXf6PyYreoxMe4-8I0P_2ir_oQs&callback=initMap">
+    </script>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+</body>
+
+</html>
